@@ -11,11 +11,15 @@
             <v-tab
                 v-for="page in this.pages"
                 :key="page"
+                :to="{
+                  name: page.route
+                }"
                 ripple
                 router
                 grow
+                
             >
-                {{ page }}
+                {{ page.name }}
             </v-tab>
         </v-tabs>
     </v-toolbar>
@@ -26,7 +30,13 @@
   export default {
     data () {
       return {
-        pages: ["About Me", "Skills", "Projects", "Blog", "Contact"],
+        pages: [
+          {name:"About Me", route: "aboutme"},
+          {name:"Skills", route: "skills"},
+          {name:"Projects", route: "projects"},
+          {name:"Blog", route: "blog"},
+          {name:"Contact", route: "contact"},
+        ],
         active: null,
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
       }
