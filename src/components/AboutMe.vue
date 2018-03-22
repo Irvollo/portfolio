@@ -5,8 +5,12 @@
        <v-card raised>
         <v-card-title primary-title>
           <div>
-            <h1 class="headline mb-0"><b>Irvollo</b> is my name, <b>Development</b> is my game.</h1>
-            <h1 class="headline mb-0">I'm a Mexican Full-Stack Javascript Developer 🌮 </h1>
+            <h1 class="headline mb-0">
+                <b><vue-typer text='Irvollo is my name, Development is my game.' :repeat='0' @typed='onTyped' caret-animation='expand' type-delay='100'></vue-typer></b>
+            </h1>
+            <h1 v-if="descTyping" class="headline mb-0">
+            <vue-typer text="I'm a Mexican Full-Stack Javascript Developer 🌮" :repeat='0' pre-type-delay='1500' caret-animation='expand' v></vue-typer>
+            </h1>
           </div>
         </v-card-title>
       </v-card>
@@ -22,11 +26,29 @@
     </v-container>
 </template>
 <script>
-    
+
+import { VueTyper } from 'vue-typer';
+
+export default {
+    data () {
+        return {
+            descTyping: false
+        }
+    },
+    components: {
+        VueTyper
+    },
+    methods: {
+        onTyped: function() {
+            this.descTyping = true;
+        }
+    }
+}
+
 </script>
 <style>
 .titulo {
-    margin-top: 10%;
+    margin-top: 8%;
     background: #FFFFFF;
     height: 100%;
 }
