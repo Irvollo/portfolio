@@ -4,6 +4,7 @@
       <page-header />
       <main>
         <v-container fluid>
+          <side-bar />
           <router-view/>
         </v-container>
       </main>
@@ -13,12 +14,14 @@
 
 <script>
 import PageHeader from '@/components/Header.vue'
+import SideBar from '@/components/social/Sidebar.vue'
 
 
 export default {
   name: 'app',
   components: {
-    PageHeader
+    PageHeader,
+    SideBar
   }
 }
 </script>
