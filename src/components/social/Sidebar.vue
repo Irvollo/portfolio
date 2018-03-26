@@ -2,7 +2,7 @@
     <div class="bar">
         <div v-for="socialNetwork in socialNetworks" :key="socialNetwork">
             <a :href="socialNetwork.url">
-                <v-btn :color="color" small>
+                <v-btn :color="color" fab small >
                     <img class="socialLogo" :src="require('../../static/social/' + socialNetwork.icon)" />
                 </v-btn>
             </a>
@@ -60,7 +60,7 @@ export default {
 }
 
 .socialLogo {
-    height: 80%;
+    height: 60%;
 }
 
 </style>

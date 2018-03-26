@@ -1,28 +1,21 @@
 <template>
-    <div>
-        <v-card flat class="title">
-          <v-card-text>
-            <h1>
-                Skills
-            </h1>
-            <Sidebar />
-          </v-card-text>
-        </v-card>
+    <div class="SkillCards"> 
+        <SkillSet />
     </div>
 </template>
 <script>
 
-import Sidebar from '@/components/social/Sidebar.vue'
+import SkillSet from '@/components/SkillSet.vue'
 
 export default {
     components:{
-        Sidebar
+        SkillSet
     }
 }
 
 </script>
 <style>
-    .title {
-        margin-top: 15%;
+    .SkillCards {
+        padding-top: 5%;
     }
 </style>
