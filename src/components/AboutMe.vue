@@ -9,7 +9,7 @@
                 <b><vue-typer text='Irvollo is my name, Development is my game.' :repeat='0' @typed='onTyped' caret-animation='expand' type-delay='100'></vue-typer></b>
             </h1>
             <h1 v-if="descTyping" class="headline mb-0">
-            <vue-typer text="I'm a Mexican Full-Stack Javascript Developer 🌮" :repeat='0' pre-type-delay='1500' caret-animation='expand' v></vue-typer>
+            <vue-typer text="I'm a Mexican Full-Stack Javascript Developer 🌮" :repeat='0' pre-type-delay=1500 caret-animation='expand' v></vue-typer>
             </h1>
           </div>
         </v-card-title>
