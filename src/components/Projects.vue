@@ -1,9 +1,9 @@
 <template>
     <v-container grid-list-xs class="projects">
-        <v-card class="project">
+        <v-card hover class="project">
             <v-layout wrap>
                 <v-flex xs12 sm4 md4 class="thumbnail">
-                    <img class="preview" src="../static/projects/optc.png" />
+                    <img class="preview" src="https://images2.imgbox.com/f5/29/Cyca5n1Z_o.gif" />
                 </v-flex>
                 <v-flex xs12 sm8 md8 class="information">
                     <div class="resume">
@@ -14,8 +14,8 @@
                         </div>
                         <v-divider></v-divider>
                         <div class="tags">
-                            <v-chip disabled small color="red" text-color="white">Ruby on Rails</v-chip>
                             <v-chip disabled small color="green" text-color="white">EJS</v-chip>
+                            <v-chip disabled small color="red" text-color="white">Ruby on Rails</v-chip>
                             <v-chip disabled small color="red" text-color="white">PostgresQL</v-chip>
                             <v-chip disabled small color="orange" text-color="white">Heroku</v-chip>
                         </div>
@@ -27,10 +27,10 @@
                 </v-flex>
             </v-layout>
         </v-card>
-        <v-card class="project">
+        <v-card hover class="project">
             <v-layout wrap>
                 <v-flex xs12 sm4 md4 class="thumbnail">
-                    <img class="preview" src="../static/projects/ss1.png" />
+                    <img class="preview" src="https://images2.imgbox.com/de/7f/61FGtKn5_o.gif" />
                 </v-flex>
                 <v-flex xs12 sm8 md8 class="information">
                     <div class="resume">
@@ -54,10 +54,10 @@
                 </v-flex>
             </v-layout>
         </v-card>
-        <v-card class="project">
+        <v-card hover class="project">
             <v-layout wrap>
                 <v-flex xs12 sm4 md4 class="thumbnail">
-                    <img class="preview" src="../static/projects/ss1.png" />
+                    <img class="preview" src="https://images2.imgbox.com/36/01/ipk44yGJ_o.gif" />
                 </v-flex>
                 <v-flex xs12 sm8 md8 class="information">
                     <div class="resume">
@@ -68,13 +68,40 @@
                         </div>
                         <v-divider></v-divider>
                         <div class="tags">
-                            <v-chip disabled small color="green" text-color="white">React.js</v-chip>
-                            <v-chip disabled small color="green" text-color="white">Semantic UI</v-chip>
+                            <v-chip disabled small color="green" text-color="white">Vue.js</v-chip>
+                            <v-chip disabled small color="red" text-color="white">Node.js</v-chip>
+                            <v-chip disabled small color="red" text-color="white">Express.js</v-chip>
+                            <v-chip disabled small color="red" text-color="white">PostgresQL</v-chip>
+                        </div>
+                        <div class="actions">
+                            <v-btn disabled color="primary">Live Demo</v-btn>
+                            <a href="https://github.com/Irvollo/tab-tracker"><v-btn color="primary">Github</v-btn></a>
+                        </div>
+                    </div>
+                </v-flex>
+            </v-layout>
+        </v-card>
+        <v-card hover class="project">
+            <v-layout wrap>
+                <v-flex xs12 sm4 md4 class="thumbnail">
+                    <img class="preview" src="https://images2.imgbox.com/a3/65/p3lAhCS9_o.gif" />
+                </v-flex>
+                <v-flex xs12 sm8 md8 class="information">
+                    <div class="resume">
+                        <h1>Binary - The Game </h1>
+                        <v-divider></v-divider>
+                        <div class="description">
+                            iOS Native Game. Make connections accross the tiles in the correct order 
+                            and score as many points as you can doing binary numbers.
+                        </div>
+                        <v-divider></v-divider>
+                        <div class="tags">
+                            <v-chip disabled small color="teal" text-color="white">Swift</v-chip>
                             <v-chip disabled small color="orange" text-color="white">Firebase</v-chip>
                         </div>
                         <div class="actions">
-                            <a href="https://iota-seed-generator.firebaseapp.com"><v-btn color="primary">Live Demo</v-btn></a>
-                            <a href="https://github.com/Irvollo/Iota-Seed-Generator"><v-btn color="primary">Github</v-btn></a>
+                            <v-btn disabled color="primary">Live Demo</v-btn>
+                            <v-btn disabled color="primary">Github</v-btn>
                         </div>
                     </div>
                 </v-flex>
@@ -106,7 +133,7 @@
     }
 
     .project {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .information {

@@ -21,7 +21,7 @@
     </v-layout>
     </v-flex>
      <v-flex xs12>
-       <img class="flatAvatar" src="../static/avatar.png" />
+       <img class="flatAvatar" src="https://images2.imgbox.com/a0/79/U9JuCX3k_o.png" />
      </v-flex>
     </v-container>
 </template>
