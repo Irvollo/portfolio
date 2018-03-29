@@ -48,7 +48,7 @@ export default {
 </script>
 <style>
 .titulo {
-    margin-top: 8%;
+    margin-top: 5em;
     background: #FFFFFF;
     height: 100%;
 }

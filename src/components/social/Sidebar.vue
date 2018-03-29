@@ -63,4 +63,5 @@ export default {
     height: 60%;
 }
 
+
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="set">
-        <v-card hover class="skillType"> 
+        <v-card raised hover class="skillType"> 
             <v-card-title primary-title>
                 <div>
                     <div class="headline"><v-icon medium  color="gray">code</v-icon> FrontEnd </div>
@@ -20,7 +20,7 @@
             </v-card-text>
         </v-card>
         <br />
-        <v-card hover class="skillType"> 
+        <v-card raised hover class="skillType"> 
             <v-card-title primary-title>
                 <div>
                     <div class="headline"><v-icon medium color="gray">storage</v-icon>  BackEnd</div>
@@ -42,7 +42,7 @@
             </v-card-text>
         </v-card>
         <br />
-        <v-card hover class="skillType"> 
+        <v-card raised hover class="skillType"> 
             <v-card-title primary-title>
                 <div>
                     <div class="headline"><v-icon medium color="gray">build</v-icon> DevOps</div>
@@ -51,7 +51,7 @@
                 </div>
             </v-card-title>
             <v-card-text>
-                <div class="skills">
+                <div raised class="skills">
                     <span color="grey darken-3">Heroku</span>
                     <v-progress-linear  value="85" height="5" color="orange"></v-progress-linear>
                     <span color="grey darken-3">Docker</span>
@@ -64,7 +64,7 @@
             </v-card-text>
         </v-card>
         <br />
-        <v-card hover class="skillType"> 
+        <v-card raised hover class="skillType"> 
             <v-card-title primary-title>
                 <div>
                     <div class="headline"><v-icon medium color="gray">smartphone</v-icon> Mobile</div>
@@ -84,7 +84,7 @@
             </v-card-text>
         </v-card>
         <br />
-        <v-card hover class="skillType"> 
+        <v-card raised hover class="skillType"> 
             <v-card-title primary-title>
                 <div>
                     <div class="headline"><v-icon medium color="gray">device_hub</v-icon> Development</div>
@@ -104,7 +104,7 @@
             </v-card-text>
         </v-card>
         <br />
-        <v-card hover class="skillType"> 
+        <v-card raised hover class="skillType"> 
             <v-card-title primary-title>
                 <div>
                     <div class="headline"><v-icon medium color="gray">description</v-icon>Certifications</div>
